@@ -4,3 +4,4 @@ numpy
 paddleocr
 keras
 paddlepaddle
+tensorflow
