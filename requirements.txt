@@ -4,4 +4,4 @@ numpy
 keras
 tensorflow
 paddleocr==2.7.0.3
-paddlepaddle
+paddlepaddle==3.0.0b1
