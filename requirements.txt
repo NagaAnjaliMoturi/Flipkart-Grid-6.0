@@ -1,7 +1,7 @@
 flask
 opencv-python
 numpy
-paddleocr
 keras
-paddlepaddle
 tensorflow
+paddleocr==2.7.0.3
+paddlepaddle==2.5.1
