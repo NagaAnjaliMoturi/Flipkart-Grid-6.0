@@ -6,7 +6,10 @@ from paddleocr import PaddleOCR
 import re
 from datetime import datetime
 from keras.models import load_model
+import tensorflow as tf
 
+# Disable GPU
+tf.config.set_visible_devices([], 'GPU')
 app = Flask(__name__)
 ocr = PaddleOCR()
 
