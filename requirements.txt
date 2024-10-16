@@ -3,4 +3,4 @@ opencv-python
 numpy
 paddleocr
 keras
-paddle
+
