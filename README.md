@@ -43,13 +43,17 @@ TensorFlow and Keras are used to build and train the model, utilizing data augme
 To run the project locally, follow these steps:
 
 1. Clone the repository:
+
    git clone https://github.com/NagaAnjaliMoturi/Flipkart-Grid-6.0
+
    cd Flipkart-Grid-6.0-main
 
 2. Install dependencies:
+
    pip install -r requirements.txt
 
 3. Run the application:
+
    python app.py
 
 Once the application is running, you can upload an image via the GUI. The extracted text will be displayed, and the system will attempt to detect expiry dates and classify food freshness.
