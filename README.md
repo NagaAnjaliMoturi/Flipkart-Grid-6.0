@@ -2,38 +2,38 @@
 
 This project utilizes Optical Character Recognition (OCR) and Convolutional Neural Networks (CNNs) to automatically detect the freshness and expiry dates of food items like fruits and vegetables. By improving the efficiency of data processing and ensuring food safety, this project aims to reduce food waste, improve operational efficiency, and enhance consumer protection.
 
-## **Table of Contents**
-
-Project Overview
-Key Features
-Technical Approach
-Usage
-Libraries and Dependencies
-Model Training
-
 ## **Project Overview**
 This project addresses two key challenges in the food industry:
 
 Text Extraction from Images: Using PaddleOCR, it extracts relevant text from images, such as expiry dates and product details from food packaging.
+
 Food Freshness Detection: It uses a CNN model (MobileNetV2) to classify food images as either fresh or rotten, helping reduce food waste.
+
 The project integrates both image processing and natural language processing (OCR) to create a comprehensive solution for food safety and sustainability.
 
 ## **Key Features**
 OCR for Text Extraction: Extracts textual information such as expiry dates, product names, and other labels from food packaging images.
+
 Expiry Date Detection: Detects and interprets expiry and manufacture dates using custom regex and date parsing.
+
 Freshness Classification: Uses a CNN-based model to classify food items as "fresh" or "rotten" based on images.
+
 Graphical User Interface (GUI): Allows easy image uploads through Tkinter and displays results directly to the user.
+
 Data Visualization: Displays extracted text, expiry date detection results, and freshness classification directly in the GUI.
 
 ## **Technical Approach**
+
 1. Text Extraction
 The PaddleOCR library is used to extract text from food packaging images. This OCR system works in multiple languages and can handle complex layouts.
 OpenCV is used to preprocess images (e.g., resizing, noise reduction) before passing them to the OCR model for better accuracy.
 Extracted text is concatenated into a single string, which is then parsed to identify expiry dates and other relevant details.
+
 2. Expiry Date Detection
 The concatenated text from the OCR process is analyzed using regular expressions (regex) to detect date formats like MM/YY, MM/DD/YYYY, and DD/MM/YYYY.
 Valid dates are then converted into datetime objects, enabling comparisons (e.g., checking if the food is expired).
 The first detected date is treated as the manufacture date, and subsequent dates are interpreted as expiry dates.
+
 3. Freshness Detection
 A MobileNetV2 model, fine-tuned for food freshness classification, is used to predict whether food items are fresh or rotten.
 The model is trained on a labeled dataset of food images (fresh vs. rotten).
@@ -43,23 +43,15 @@ TensorFlow and Keras are used to build and train the model, utilizing data augme
 To run the project locally, follow these steps:
 
 1. Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/food-freshness-expiry-detection.git
+git clone 
 cd food-freshness-expiry-detection
-2. Create and activate a virtual environment (recommended):
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-3. Install dependencies:
-bash
-Copy code
+
+2. Install dependencies:
 pip install -r requirements.txt
-4. Run the application:
-bash
-Copy code
+
+3. Run the application:
 python app.py
+
 Once the application is running, you can upload an image via the GUI. The extracted text will be displayed, and the system will attempt to detect expiry dates and classify food freshness.
 
 Example Output:
