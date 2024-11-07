@@ -17,14 +17,14 @@ Text Extraction from Images: Using PaddleOCR, it extracts relevant text from ima
 Food Freshness Detection: It uses a CNN model (MobileNetV2) to classify food images as either fresh or rotten, helping reduce food waste.
 The project integrates both image processing and natural language processing (OCR) to create a comprehensive solution for food safety and sustainability.
 
-**Key Features**
+## **Key Features**
 OCR for Text Extraction: Extracts textual information such as expiry dates, product names, and other labels from food packaging images.
 Expiry Date Detection: Detects and interprets expiry and manufacture dates using custom regex and date parsing.
 Freshness Classification: Uses a CNN-based model to classify food items as "fresh" or "rotten" based on images.
 Graphical User Interface (GUI): Allows easy image uploads through Tkinter and displays results directly to the user.
 Data Visualization: Displays extracted text, expiry date detection results, and freshness classification directly in the GUI.
 
-**Technical Approach**
+## **Technical Approach**
 1. Text Extraction
 The PaddleOCR library is used to extract text from food packaging images. This OCR system works in multiple languages and can handle complex layouts.
 OpenCV is used to preprocess images (e.g., resizing, noise reduction) before passing them to the OCR model for better accuracy.
@@ -38,7 +38,7 @@ A MobileNetV2 model, fine-tuned for food freshness classification, is used to pr
 The model is trained on a labeled dataset of food images (fresh vs. rotten).
 TensorFlow and Keras are used to build and train the model, utilizing data augmentation techniques for better generalization.
 
-**Usage**
+## **Usage**
 To run the project locally, follow these steps:
 
 1. Clone the repository:
@@ -64,7 +64,8 @@ Once the application is running, you can upload an image via the GUI. The extrac
 Example Output:
 Extracted Text: "Expiry Date: 2024/12/31"
 Freshness Status: "Fresh" or "Rotten"
-Libraries and Dependencies
+
+## Libraries and Dependencies
 This project depends on the following libraries:
 
 OpenCV (opencv-python) for image processing.
@@ -79,7 +80,8 @@ To install all dependencies, run:
 bash
 Copy code
 pip install -r requirements.txt
-Model Training
+
+## Model Training
 1. Dataset Preparation
 The dataset contains images of food items labeled as either "fresh" or "rotten."
 The images are preprocessed (resized, normalized) to match the input size required by the model.
