@@ -43,14 +43,14 @@ TensorFlow and Keras are used to build and train the model, utilizing data augme
 To run the project locally, follow these steps:
 
 1. Clone the repository:
-git clone 
-cd food-freshness-expiry-detection
+   git clone https://github.com/NagaAnjaliMoturi/Flipkart-Grid-6.0
+   cd Flipkart-Grid-6.0-main
 
 2. Install dependencies:
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 3. Run the application:
-python app.py
+   python app.py
 
 Once the application is running, you can upload an image via the GUI. The extracted text will be displayed, and the system will attempt to detect expiry dates and classify food freshness.
 
@@ -62,28 +62,20 @@ Freshness Status: "Fresh" or "Rotten"
 This project depends on the following libraries:
 
 OpenCV (opencv-python) for image processing.
+
 PaddleOCR for extracting text from images.
+
 NumPy for numerical operations and handling image data.
+
 TensorFlow and Keras for deep learning and model training.
+
 Tkinter for the GUI interface.
+
 re for regular expression-based date extraction.
+
 datetime for date parsing and validation.
+
 To install all dependencies, run:
 
-bash
-Copy code
 pip install -r requirements.txt
 
-## Model Training
-1. Dataset Preparation
-The dataset contains images of food items labeled as either "fresh" or "rotten."
-The images are preprocessed (resized, normalized) to match the input size required by the model.
-Data augmentation techniques (e.g., rotation, flipping) are applied to increase the variety of training data and improve the model's robustness.
-2. Model Architecture
-A pre-trained MobileNetV2 model is used as the backbone for the food freshness classification task. Additional layers (Batch Normalization, Dropout, etc.) are added for fine-tuning the model.
-The model is trained using binary cross-entropy loss and the Adam optimizer.
-3. Training Process
-The model is trained for several epochs, with callbacks used to adjust the learning rate and save the best model during training.
-The model is evaluated using a validation set to assess performance and ensure it generalizes well to unseen data.
-4. Retraining
-If you want to retrain the model with your own dataset, follow the instructions in training.py to prepare the data and retrain the model.
