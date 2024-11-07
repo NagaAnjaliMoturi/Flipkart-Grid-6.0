@@ -83,7 +83,8 @@ To install all dependencies, run:
 
 pip install -r requirements.txt
 
-
+## Text Extraction
+![image](https://github.com/user-attachments/assets/d67ee0c8-85da-4732-914c-225641f1764f)
 
 ![image](https://github.com/user-attachments/assets/e54034c6-4ff8-42f4-a08f-2631f91f7302)
 
@@ -92,6 +93,8 @@ pip install -r requirements.txt
 ![image](https://github.com/user-attachments/assets/3e4baf49-1bdf-4b40-9e0d-6e06c9d4dd4c)
 
 
+## Expiry date Extraction
+![image](https://github.com/user-attachments/assets/322e0d54-e514-422e-8a6d-b202c7095a57)
 
 ![image](https://github.com/user-attachments/assets/0aba5272-1eda-4fca-95c8-bd96277122bc)
 
@@ -100,7 +103,7 @@ pip install -r requirements.txt
 ![image](https://github.com/user-attachments/assets/89aac366-1a2c-470d-ba74-e2230dc6cea4)
 
 
-
+## Fruit Freshness
 ![image](https://github.com/user-attachments/assets/fb1b4c09-4bf7-4dbc-ba2f-dea078851998)
 
 ![image](https://github.com/user-attachments/assets/5e0ed04d-d023-427e-94dc-d867afd3afa5)
