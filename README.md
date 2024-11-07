@@ -104,6 +104,8 @@ pip install -r requirements.txt
 
 
 ## Fruit Freshness
+![image](https://github.com/user-attachments/assets/a60b6677-0ac0-496b-b717-5450d0df98c2)
+
 ![image](https://github.com/user-attachments/assets/fb1b4c09-4bf7-4dbc-ba2f-dea078851998)
 
 ![image](https://github.com/user-attachments/assets/5e0ed04d-d023-427e-94dc-d867afd3afa5)
