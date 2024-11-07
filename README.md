@@ -83,3 +83,34 @@ To install all dependencies, run:
 
 pip install -r requirements.txt
 
+
+
+![image](https://github.com/user-attachments/assets/e54034c6-4ff8-42f4-a08f-2631f91f7302)
+
+![image](https://github.com/user-attachments/assets/a1fb401a-2a9a-4dd9-9e73-2a37e3843c8a)
+
+![image](https://github.com/user-attachments/assets/3e4baf49-1bdf-4b40-9e0d-6e06c9d4dd4c)
+
+
+
+![image](https://github.com/user-attachments/assets/0aba5272-1eda-4fca-95c8-bd96277122bc)
+
+![image](https://github.com/user-attachments/assets/bfe2b1ef-0988-4408-b7e5-a1dffd3dcc0c)
+
+![image](https://github.com/user-attachments/assets/89aac366-1a2c-470d-ba74-e2230dc6cea4)
+
+
+
+![image](https://github.com/user-attachments/assets/fb1b4c09-4bf7-4dbc-ba2f-dea078851998)
+
+![image](https://github.com/user-attachments/assets/5e0ed04d-d023-427e-94dc-d867afd3afa5)
+
+![image](https://github.com/user-attachments/assets/94c6a5ec-7dff-468c-b962-e1107f75d6ae)
+
+
+
+
+
+
+
+
