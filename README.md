@@ -2,18 +2,13 @@
 
 This project utilizes Optical Character Recognition (OCR) and Convolutional Neural Networks (CNNs) to automatically detect the freshness and expiry dates of food items like fruits and vegetables. By improving the efficiency of data processing and ensuring food safety, this project aims to reduce food waste, improve operational efficiency, and enhance consumer protection.
 
-**Table of Contents**
+## **Table of Contents**
 
 Project Overview
-
 Key Features
-
 Technical Approach
-
 Usage
-
 Libraries and Dependencies
-
 Model Training
 
 ## **Project Overview**
