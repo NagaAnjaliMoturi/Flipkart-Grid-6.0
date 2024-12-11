@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7b0d3b1f-c2f5-43e3-b395-5cb151f7e3de)## **Food Freshness and Expiry Date Detection**
+## **Food Freshness and Expiry Date Detection**
 
 This project utilizes Optical Character Recognition (OCR) and Convolutional Neural Networks (CNNs) to automatically detect the freshness and expiry dates of food items like fruits and vegetables. By improving the efficiency of data processing and ensuring food safety, this project aims to reduce food waste, improve operational efficiency, and enhance consumer protection.
 
@@ -67,25 +67,42 @@ Freshness Status: "Fresh" or "Rotten"
 ## Libraries and Dependencies
 This project depends on the following libraries:
 
-OpenCV (opencv-python) for image processing.
+Streamlit (st): For building the web app interface and handling user input.
 
-PaddleOCR for extracting text from images.
+PaddleOCR: For optical character recognition (OCR) to extract text from images.
 
-NumPy for numerical operations and handling image data.
+NumPy: For array manipulation and data processing.
 
-TensorFlow and Keras for deep learning and model training.
+Pandas: For handling structured data (though not actively used in the code snippets provided).
 
-Tkinter for the GUI interface.
+OpenCV (cv2): For image manipulation (e.g., resizing, loading).
 
-re for regular expression-based date extraction.
+Matplotlib: For plotting graphs (e.g., training history plots).
 
-datetime for date parsing and validation.
+Keras: For building and training the deep learning model (used with TensorFlow).
+
+TensorFlow (tf): For creating and training neural network models.
+
+Dateutil: For handling and parsing date information.
+
+FuzzyWuzzy: For fuzzy text matching, especially used in brand detection.
+
+PIL (Pillow): For image opening and manipulation.
+
+Re: For regular expressions (used in text extraction and parsing).
+
+Io: For handling image data from Streamlit file upload or camera input.
+
+OS: For file and directory handling.
 
 To install all dependencies, run:
 
 pip install -r requirements.txt
 
 ![image](https://github.com/user-attachments/assets/c86c8156-e202-4371-b4d6-726b595d4aeb)
+
+![image](https://github.com/user-attachments/assets/1d58f3ac-c498-46df-907a-c8f6730a4bc1)
+
 
 ## Text Extraction
 ![image](https://github.com/user-attachments/assets/0f22a72c-a3ea-4716-9dba-68d252a95706)
@@ -99,7 +116,11 @@ pip install -r requirements.txt
 
 
 ## Expiry date Extraction
-![image](https://github.com/user-attachments/assets/a194e277-7eea-4e8a-9434-71664c6b4fb6)
+![image](https://github.com/user-attachments/assets/0c0dde76-7254-4d97-9319-4383f82979c9)
+
+![image](https://github.com/user-attachments/assets/50ea38db-bf88-4307-99dc-eb2654e10020)
+
+![image](https://github.com/user-attachments/assets/f6989640-8df9-4e6d-ba2d-67c78cd935be)
 
 ![image](https://github.com/user-attachments/assets/efbcb8fb-59b3-42cd-97b1-36751d843d0b)
 
