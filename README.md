@@ -1,4 +1,4 @@
-## **Food Freshness and Expiry Date Detection**
+![image](https://github.com/user-attachments/assets/7b0d3b1f-c2f5-43e3-b395-5cb151f7e3de)## **Food Freshness and Expiry Date Detection**
 
 This project utilizes Optical Character Recognition (OCR) and Convolutional Neural Networks (CNNs) to automatically detect the freshness and expiry dates of food items like fruits and vegetables. By improving the efficiency of data processing and ensuring food safety, this project aims to reduce food waste, improve operational efficiency, and enhance consumer protection.
 
@@ -88,7 +88,11 @@ pip install -r requirements.txt
 ![image](https://github.com/user-attachments/assets/c86c8156-e202-4371-b4d6-726b595d4aeb)
 
 ## Text Extraction
+![image](https://github.com/user-attachments/assets/0f22a72c-a3ea-4716-9dba-68d252a95706)
+
 ![image](https://github.com/user-attachments/assets/a66fda95-e818-4720-846a-5f9395c71cc2)
+
+![image](https://github.com/user-attachments/assets/2c75a46e-1268-4655-ba17-5c09d36a8c4f)
 
 ![image](https://github.com/user-attachments/assets/68434317-1552-45c9-8693-066f203a1a24)
 
