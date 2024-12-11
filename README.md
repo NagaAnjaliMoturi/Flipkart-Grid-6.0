@@ -106,7 +106,9 @@ pip install -r requirements.txt
 
 ![image](https://github.com/user-attachments/assets/37e148ae-5f0c-4686-9eba-2408adc67996)
 
-![image](https://github.com/user-attachments/assets/5e0ed04d-d023-427e-94dc-d867afd3afa5)
+![image](https://github.com/user-attachments/assets/b3bb2160-74ff-43a8-b178-fc250af12bdc)
+
+![image](https://github.com/user-attachments/assets/4052205e-df1d-456e-8f1d-c05a42ad61a8)
 
 
 
