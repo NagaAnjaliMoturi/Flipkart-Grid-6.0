@@ -12,15 +12,17 @@ Food Freshness Detection: It uses a CNN model (MobileNetV2) to classify food ima
 The project integrates both image processing and natural language processing (OCR) to create a comprehensive solution for food safety and sustainability.
 
 ## **Key Features**
-OCR for Text Extraction: Extracts textual information such as expiry dates, product names, and other labels from food packaging images.
+This application leverages advanced image processing and machine learning techniques to analyze product images and extract valuable insights. Built using Streamlit for the user interface and integrating PaddleOCR for text extraction, Keras for freshness detection, and custom algorithms for brand and expiry date identification, the tool provides three core functionalities:
 
-Expiry Date Detection: Detects and interprets expiry and manufacture dates using custom regex and date parsing.
+-Text Extraction: Using PaddleOCR, the application extracts text from uploaded or captured images. It then identifies the presence of a brand from a predefined list using fuzzy matching and regular expressions.
 
-Freshness Classification: Uses a CNN-based model to classify food items as "fresh" or "rotten" based on images.
+Expiry Date Extraction: The app parses the extracted text to detect potential expiry dates or "Best Before" and "Use By" information. It interprets various date formats and computes expiry dates, factoring in months or years from the extracted date.
 
-Graphical User Interface (GUI): Allows easy image uploads through Tkinter and displays results directly to the user.
+Freshness Detection: The application uses a pre-trained Keras model to evaluate the freshness of a product based on its image. The result categorizes the item as either "Fresh" or "Not Fresh."
 
-Data Visualization: Displays extracted text, expiry date detection results, and freshness classification directly in the GUI.
+Users interact with the application through a web interface that allows them to either upload an image or use the camera to capture it. Once an image is provided, users can select the desired analysis task (text extraction, expiry date, or freshness), and the system processes the image to provide detailed insights.
+
+This tool is ideal for businesses in the FMCG, food, and health sectors, enabling them to automate the inspection and verification of products for attributes like brand identification, expiry dates, and freshness—key factors in quality control and product management.
 
 ## **Technical Approach**
 
