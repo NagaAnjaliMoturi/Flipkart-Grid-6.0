@@ -85,196 +85,34 @@ To install all dependencies, run:
 
 pip install -r requirements.txt
 
+![image](https://github.com/user-attachments/assets/c86c8156-e202-4371-b4d6-726b595d4aeb)
+
 ## Text Extraction
-![image](https://github.com/user-attachments/assets/d67ee0c8-85da-4732-914c-225641f1764f)
+![image](https://github.com/user-attachments/assets/a66fda95-e818-4720-846a-5f9395c71cc2)
 
-![image](https://github.com/user-attachments/assets/e54034c6-4ff8-42f4-a08f-2631f91f7302)
+![image](https://github.com/user-attachments/assets/68434317-1552-45c9-8693-066f203a1a24)
 
-![image](https://github.com/user-attachments/assets/a1fb401a-2a9a-4dd9-9e73-2a37e3843c8a)
-
-![image](https://github.com/user-attachments/assets/3e4baf49-1bdf-4b40-9e0d-6e06c9d4dd4c)
 
 
 ## Expiry date Extraction
-![image](https://github.com/user-attachments/assets/322e0d54-e514-422e-8a6d-b202c7095a57)
+![image](https://github.com/user-attachments/assets/a194e277-7eea-4e8a-9434-71664c6b4fb6)
 
-![image](https://github.com/user-attachments/assets/0aba5272-1eda-4fca-95c8-bd96277122bc)
+![image](https://github.com/user-attachments/assets/efbcb8fb-59b3-42cd-97b1-36751d843d0b)
 
-![image](https://github.com/user-attachments/assets/bfe2b1ef-0988-4408-b7e5-a1dffd3dcc0c)
-
-![image](https://github.com/user-attachments/assets/89aac366-1a2c-470d-ba74-e2230dc6cea4)
 
 
 ## Fruit Freshness
 ![image](https://github.com/user-attachments/assets/a60b6677-0ac0-496b-b717-5450d0df98c2)
 
-![image](https://github.com/user-attachments/assets/fb1b4c09-4bf7-4dbc-ba2f-dea078851998)
+![image](https://github.com/user-attachments/assets/37e148ae-5f0c-4686-9eba-2408adc67996)
 
 ![image](https://github.com/user-attachments/assets/5e0ed04d-d023-427e-94dc-d867afd3afa5)
 
-![image](https://github.com/user-attachments/assets/94c6a5ec-7dff-468c-b962-e1107f75d6ae)
 
 
 
 
 
-1. Overview
-The Product Insight application is a machine learning-based tool built with the help of computer vision and natural language processing (NLP) techniques. The application provides three main functionalities:
-
-Text Extraction – Extracts and processes text (including brand names) from images using Optical Character Recognition (OCR).
-Expiry Date Detection – Detects expiry dates from the extracted text and computes the expiry date of the product based on information like manufacturing date and best-before duration.
-Freshness Detection – Classifies the freshness of a product (fresh or rotten) based on the visual characteristics of the product image, using a pre-trained machine learning model.
-The application uses Streamlit for creating an interactive web interface and integrates several AI models and libraries for text extraction and image classification.
-
-2. Features
-Text Extraction:
-
-Extracts readable text from images using OCR (PaddleOCR).
-Detects brand names from extracted text.
-Expiry Date Detection:
-
-Detects expiry date information from extracted text (e.g., "BEST BEFORE", "USE BY").
-Uses natural language processing to infer expiry dates and calculate the product’s expiry from manufacturing dates.
-Freshness Detection:
-
-Uses a pre-trained Convolutional Neural Network (CNN) model to classify images as "fresh" or "rotten".
-Evaluates the freshness based on a predefined threshold for model output.
-3. Functional Workflow
-The Product Insight application operates through three distinct tasks, which users can select interactively:
-
-Image Upload or Camera Input:
-
-Users can either upload an image from their local machine or capture a new image using their webcam.
-Text Extraction:
-
-The uploaded image is processed using PaddleOCR to extract text.
-After extracting the text, the application searches for brand names and displays them.
-Expiry Date Extraction:
-
-After text extraction, the system identifies expiry-related text (like "Best Before" or "Use By").
-The system processes potential dates and calculates the expiry date based on the found data.
-Freshness Detection:
-
-A pre-trained CNN model evaluates the product's image to predict its freshness (whether it's "fresh" or "rotten").
-The model’s output is used to classify the item’s freshness.
-4. Workflow of the Application
-Text Extraction Workflow
-
-Input: Product image.
-Process: OCR is applied to extract text from the image.
-Output: Extracted text is shown. The application also tries to detect the product's brand name.
-Flowchart:
-
-plaintext
-Copy code
-               Start
-                  ↓
-        Image Upload or Capture
-                  ↓
-          Apply OCR to Image
-                  ↓
-  Text Extracted from Image (OCR Output)
-                  ↓
-  Check if Text Extraction was Successful
-                  ↓
-   Is Text Found in the Image? 
-    ├── Yes: Extracted Text to Return
-    └── No: Return "No Text Found"
-                  ↓
-           Output Extracted Text
-                  ↓
-                End
-Expiry Date Extraction Workflow
-
-Input: Extracted text from image.
-Process: The application searches for patterns related to expiry dates, such as "Best Before", "Use By", and associated dates.
-Output: The system computes and displays the expiry date.
-Flowchart:
-
-plaintext
-Copy code
-                   Start
-                      ↓
-           Image Upload or Capture
-                      ↓
-             Apply OCR to Extract Text
-                      ↓
-       Extracted Text Containing Date Info
-                      ↓
- Check if Expiry Date Information is Found
-                      ↓
-   Is Expiry Date Found in Text? 
-    ├── Yes: Parse Expiry Date from Text
-    └── No: Return "Expiry Date Not Found"
-                      ↓
-   Calculate Expiry Date based on Text Information
-                      ↓
-                Output Expiry Date
-                      ↓
-                    End
-Freshness Detection Workflow
-
-Input: Product image.
-Process: The image is preprocessed (resized, normalized) and passed through a pre-trained model for classification.
-Output: The freshness classification result ("Fresh" or "Not Fresh") is displayed.
-Flowchart:
-
-plaintext
-Copy code
-                  Start
-                     ↓
-        Image Upload or Capture
-                     ↓
-        Image Preprocessing (Resize, Normalize)
-                     ↓
-            Model Inference (Image Prediction)
-                     ↓
-         Prediction (Fresh or Rotten Probability)
-                     ↓
-          Thresholding (Is prediction > 0.6?)
-       ├── Yes: "The item is FRESH!"
-       └── No: "The item is NOT FRESH."
-                     ↓
-              Output Freshness Result
-                     ↓
-                   End
-5. Libraries and Tools Used
-Streamlit: For building the web application and providing an interactive interface.
-PaddleOCR: For Optical Character Recognition (OCR) to extract text from images.
-OpenCV: For image manipulation, such as resizing and color conversion.
-Keras & TensorFlow: For building and training the machine learning models (used for freshness detection).
-FuzzyWuzzy: For approximate string matching to detect brand names from the extracted text.
-Matplotlib: For visualizing the training progress of the model.
-6. Model Details
-Freshness Detection Model (CNN):
-
-Type: Convolutional Neural Network (CNN).
-Purpose: Classifies images into two categories: fresh and rotten.
-Model Architecture: The model utilizes a MobileNetV2 backbone for feature extraction (pre-trained on ImageNet), followed by custom layers (Conv2D, SeparableConv2D, Dense layers) to classify the image.
-Training: The model is trained on a labeled dataset of fresh and rotten product images.
-Threshold: The prediction probability threshold for classification is set to 0.6.
-OCR (PaddleOCR):
-
-Purpose: To extract text from product packaging images.
-Output: Extracted text is then processed to detect brand names and expiry date information.
-7. Installation and Setup
-Clone the repository:
-
-bash
-Copy code
-git clone <repository-url>
-Install the dependencies: You need to install the following libraries:
-
-bash
-Copy code
-pip install streamlit paddlepaddle opencv-python tensorflow fuzzywuzzy matplotlib
-Run the Application: To run the Streamlit app, navigate to the project directory and execute:
-
-bash
-Copy code
-streamlit run app.py
-8. Conclusion
-The Product Insight application leverages computer vision and machine learning to extract valuable product information such as text, expiry dates, and freshness directly from product images. It provides a seamless experience for users to upload product images, extract relevant information, and classify the freshness of products in real time.
 
 
 
